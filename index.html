@@ -1,49 +1,323 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="hr">
 <head>
 <title>Programiranje web aplikacija</title>
 <meta charset="UTF-8">
-<meta name="description" content="Online trgovina">
-<meta name="keywords" content="">
+<meta name="description" content="Photography portfolio">
+<meta name="keywords" content="photography, pictures">
 <meta name="author" content="Zeljko Klipic">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css">
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+.w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
+</style>
 </head>
-<body>
-<div id="wrapper">
-	<header>
-		<figure>
-			<img src="images/logo.png" alt="WebShop logo" width="300" height="188">
-		</figure>
-	</header>
-	<nav>
-		<a href="index.html">Pocetna</a>
-		<a href="onama.html">O nama</a>
-		<a href="kontakt.html">Kontakt</a>
-		<a href="http://www.vvg.hr">VVG</a>
-	</nav>
-	<section>
-		<h1>Najnoviji proizvodi</h1>
-		<article>
-			<h3>LED</h3>
-			<p>Network wavelength solution converter LED key. Recursive integer gigabyte null. Fluctuating logistically silicon. Theory fluctuating fluctuating backbone with.</p>
-		</article>
-		<article>
-			<h3>LED2</h3>
-			<p>Timer cache in. high-level supporting. Particle node recognition bus particle services extension coordinated.</p>
-		</article>
-		<article>
-			<h3>LED3</h3>
-			<p>Limiter computer spectrum metafile inversion. Inducer silicon with cascading wavelength fluctuating error.</p>
-		</article>
-	</section>
-	<br>
-	<br>
-	<footer>
-		<p>Autor: Zeljko Klipic Kontakt: zeljko.klipic@gmail.com</p>
-		<p>Stranica kreirana 2016. g</p>
-	</footer>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidenav"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <a href="index.html"><img src="images/MARSHA_logo.png" alt="Marsha logo" style="width:60%;" class="w3-round"></a><br><br>
+    <h4 class="w3-padding-0"><b>Marsha photography</b></h4>
+  </div>
+  <a href="#portfolio" onclick="w3_close()" class="w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+  <a href="#about" onclick="w3_close()" class="w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>BIOGRAFIJA</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>KONTAKT</a>
+   
+  <div class="w3-section w3-padding-top w3-large">
+    <a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-purple w3-show-inline-block"><i class="fa fa-instagram"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-yellow w3-show-inline-block"><i class="fa fa-snapchat"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header class="w3-container" id="portfolio">
+    <a href="#"><img src="images/MARSHA_logo.png" alt="Marsha logo" style="width:75px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <h1><b>Portfolio</b></h1>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/IMG_1471.jpg" alt="Flowers" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/IMG_1001.jpg" alt="Flowers" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="images/IMG_1938.jpg" alt="Street Artist" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/IMG_2034.jpg" alt="Street Artist" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/IMG_1002.jpg" alt="People" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="images/IMG_1000.jpg" alt="Lisabon" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+  
+    <!-- Third Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/IMG_1005.jpg" alt="People" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/IMG_1006.jpeg" alt="People" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="images/IMG_2487.jpg" alt="Doors" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- About me -->
+  <div id="about" class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>Biografija</b></h4>
+    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    <hr>
+    
+    <h4>Vještine</h4>
+    <!-- Progress bars / Skills -->
+    <p>Fotografija</p>
+    <div class="w3-progress-container w3-grey">
+      <div class="w3-progressbar w3-dark-grey" style="width:95%"></div>
+    </div>
+    <p>Web Design</p>
+    <div class="w3-progress-container w3-grey">
+      <div class="w3-progressbar w3-dark-grey" style="width:85%"></div>
+    </div>
+    <p>Photoshop</p>
+    <div class="w3-progress-container w3-grey">
+      <div class="w3-progressbar w3-dark-grey" style="width:80%"></div>
+    </div>
+    <p>
+      <button class="w3-btn w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+        <i class="fa fa-download w3-margin-right"></i>Preuzmi životopis
+      </button>
+    </p>
+    <hr>
+    
+    <h4>Usluga fotografiranja vjenčanja</h4>
+    <!-- Pricing Tables -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32">Osnovno</li>
+          <li class="w3-padding-16">Jedan fotograf</li>
+          <li class="w3-padding-16">8 sati</li>
+          <li class="w3-padding-16">Sve fotografije uređene</li>
+          <li class="w3-padding-16">DVD</li>
+          <li class="w3-padding-16">
+            <h2>HRK 3000</h2>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button id="buttonBasic" class="w3-btn w3-teal w3-padding-large w3-hover-black" onclick="button_order(this.id)">Naruči</button>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-teal w3-xlarge w3-padding-32">Deluxe</li>
+          <li class="w3-padding-16">Dva fotografa</li>
+          <li class="w3-padding-16">10 sati</li>
+          <li class="w3-padding-16">Sve fotografije uređene</li>
+          <li class="w3-padding-16">DVD</li>
+          <li class="w3-padding-16">
+            <h2>HRK 5000</h2>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button id="buttonDeluxe" class="w3-btn w3-teal w3-padding-large w3-hover-black" onclick="button_order(this.id)">Naruči</button>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="w3-third">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32">Elite</li>
+          <li class="w3-padding-16">Dva fotografa</li>
+          <li class="w3-padding-16">Cijeli dan</li>
+          <li class="w3-padding-16">Sve fotografije uređene</li>
+          <li class="w3-padding-16">3 DVD-a i fotoalbum s 30 slika</li>
+          <li class="w3-padding-16">
+            <h2>HRK 7500</h2>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button id="buttonElite" class="w3-btn w3-teal w3-padding-large w3-hover-black" onclick="button_order(this.id)">Naruči</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Kontakt</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>email@email.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Zagreb, HR</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>512312311</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form id="form" action="form.php" method="post" target="_blank">
+      <div class="w3-group">
+        <label>Ime</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+	  <div class="w3-group">
+        <label>Prezime</label>
+        <input class="w3-input w3-border" type="text" name="Surname" required>
+      </div>
+      <div class="w3-group">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+	  <div class="w3-group">
+        <label>Predmet</label>
+        <input class="w3-input w3-border" type="text" name="Subject" required>
+      </div>
+      <div class="w3-group">
+        <label>Poruka</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-btn w3-padding-large w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Pošalji poruku</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>Autor</h3>
+      <p>Željko Klipić</p>
+      <p>Email: zeljko.klipic(at)gmail.com</p>
+	  <p>Stranica kreirana 2016.g</p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
+      </p>
+    </div>
+
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
 </div>
+
+<script>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+function button_order(orderButtonId) {
+	window.location.href="#contact";
+	if (orderButtonId == "buttonBasic") {
+		document.getElementById("form").elements["Subject"].value = "Basic paket";
+	}
+	else if (orderButtonId == "buttonDeluxe") {
+		document.getElementById("form").elements["Subject"].value = "Deluxe paket";
+	}
+	else if (orderButtonId == "buttonElite") {
+		document.getElementById("form").elements["Subject"].value = "Elite paket";
+	}
+	else
+		window.location.href="index.html";
+}
+</script>
+
 </body>
 </html>
