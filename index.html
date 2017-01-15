@@ -250,44 +250,39 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
   <!-- Footer -->
   <footer class="w3-container w3-padding-32 w3-dark-grey">
-  <div class="w3-row-padding">
-    <div class="w3-third">
-      <h3>Autor</h3>
-      <p>Željko Klipić</p>
-      <p>Email: zeljko.klipic(at)gmail.com</p>
-	  <p>Stranica kreirana 2016.g</p>
-    </div>
+	<div class="w3-row-padding">
+		<div class="w3-third">
+			<h3>Autor</h3>
+			<p>Željko Klipić</p>
+			<p>Email: zeljko.klipic(at)gmail.com</p>
+			<p>Stranica kreirana 2016.g</p>
+		</div>
   
     <div class="w3-third">
-      <h3>Prijavi se na newsletter</h3>
-      <ul class="w3-ul w3-hoverable">
-        <li class="w3-padding-16">
-          <span class="w3-large">Lorem</span><br>
-          <span>Sed mattis nunc</span>
-        </li>
-        <li class="w3-padding-16">
-          <span class="w3-large">Ipsum</span><br>
-          <span>Praes tinci sed</span>
-        </li> 
-      </ul>
+		<h3>Prijavi se na newsletter</h3>
+		<form id="newsletter" action="newsletter.php" method="post" target="_self">
+			<div class="w3-group">
+				<label>Email</label>
+				<input class="w3-input w3-border" type="text" name="Email" required oninvalid="this.setCustomValidity('Obavezno polje')" oninput="setCustomValidity('')">
+			</div>
+			<button type="submit" class="w3-btn w3-padding-large w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Prijava</button>
+		</form>
     </div>
 
     <div class="w3-third">
-      <h3>Popularni tagovi</h3>
-      <p>
+		<h3>Popularni tagovi</h3>
+		<p>
         <span class="w3-tag w3-black w3-margin-bottom">fotografija</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">vjenčanja</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
         <span class="w3-tag w3-grey w3-small w3-margin-bottom">photoshop</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">design</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
         <span class="w3-tag w3-grey w3-small w3-margin-bottom">VSCO</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">people</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">family</span>
         <span class="w3-tag w3-grey w3-small w3-margin-bottom">nature</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">clothing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">shopping</span>
         <span class="w3-tag w3-grey w3-small w3-margin-bottom">sports</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">games</span>
-      </p>
-    </div>
+		</p>
+	</div>
+	</div>
+</footer>
 
-  </div>
-  </footer>
-  
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
-
+<div class="w3-black w3-center w3-padding-24">Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
 <!-- End page content -->
 </div>
 
